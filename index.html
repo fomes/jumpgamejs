@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" onkeyup="jump()" onclick="jump()">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game</title>
+
+  <link rel="shortcut icon" href="#">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet" />
+
+  <script defer type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script>
+  <script defer src="js/script.js"></script>
+</head>
+<body>
+
+  <div class="game">
+
+    <div class="score">
+      <button onclick="start()">START</button>
+      <span>SCORE:</span> <span id="score"></span> |
+      <span>BEST:</span> <span id="best"></span>
+      <p class="instruct">Toque na tela para pular</p>
+    </div>
+
+    <div>
+      <img id="char" src="img/sonic-unscreen.gif" alt="sonic char"/>
+      <img id="block" src="img/spikes.png" alt="spikes"/>
+      <div id="gameOver"></div>
+      <audio src="" autoplay type="audio/mpeg" id="song" class="audio"></audio>
+    </div>
+
+  </div>
+
+  <div class="sub-container">
+
+    <footer class="bg-light text-center text-lg-start">
+      <div class="text-center p-3 footer">
+        1995 SEGA - All Rights Reserved |
+        <a class="text-dark" href="https://fomes.github.io" target="blank"><strong>Felipe Gomes</strong></a>
+      </div>
+    </footer>
+
+  </div>
+
+</body>
+</html>

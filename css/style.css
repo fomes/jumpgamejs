@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600&display=swap');
+
+body{
+  margin: 0;
+  background-color: rgb(0, 174, 239);
+}
+
+.game{
+  width: 100vw;
+  height: 70vh;
+  border: 1px solid black;
+  margin: auto;
+  background-image: url('/img/sonic_bg.png');
+}
+
+.game::after{
+  width: 100vw;
+  height: 70vh;
+  border: 1px solid black;
+  margin: auto;
+  background-image: url('/img/sonic_bg.png') block 2s infinite linear;
+}
+
+.sub-container {
+  background-image: url('/img/footer-container.png');
+  height: 28vh;
+}
+
+.instruct {
+  margin-left: 20px;
+}
+
+.score {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  margin-top: 10px;
+  position: absolute;
+  left: 5px;
+}
+
+.score button{
+  color: #fff;
+  background: #000;
+}
+
+.animate{
+  animation: jump 0.5s linear;
+}
+
+.audio {
+  height: 30px;
+}
+
+#gameOver {
+  text-align: center;
+  font-size: 60px;
+  font-family: 'Anton', sans-serif;
+  animation: blink 1s linear infinite;
+}
+
+.footer {
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  font-size: 15px;
+  position: absolute;
+  color: #000;
+  background-color: #7a7a7a;
+}
+
+#char{
+  width: 80px;
+  height: 79px;
+  position:relative;
+  top: 320px;
+}
+
+#block{
+  width: 60px;
+  height: 60px;
+  position: relative;
+  top: 329px;
+  left: 1195px;
+  animation: block 2s infinite linear;
+}
+
+@keyframes jump{
+  0%{top: 328px;}
+  25%{top: 240px;}
+  50%{top: 200px;}
+  75%{top: 240px;}
+  100%{top: 328px;}
+}
+
+@keyframes block{
+  0%{left: 1320px}
+  100%{left: -115px}
+}
+
+@keyframes blink {
+  0%{opacity: 0;}
+  100%{opacity: 1;}
+}
